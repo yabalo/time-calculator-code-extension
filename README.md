@@ -12,7 +12,7 @@ For example:
 
 becomes 
 
-`8:27 + 8:00 = 16:26`
+`8:27 + 8:00 = 16:27`
 
 If you run `TimeCalc: Calculate time` on this expression, an information message is shown with the text 'Correct!'. 
 
