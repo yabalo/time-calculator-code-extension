@@ -28,6 +28,18 @@ None so far.
 
 ## Release Notes
 
+### 1.0.3
+
+ - Updated changelog
+
+### 1.0.2
+
+ - Fixed typo in readme
+
+### 1.0.1
+
+ - Added icon
+
 ### 1.0.0
 
 Initial release of Time Calculator.
