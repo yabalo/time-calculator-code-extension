@@ -2,8 +2,8 @@
   "name": "time-calculator",
   "displayName": "Time Calculator",
   "description": "Simple plugin that calculates the time given an expression with time and scalar values",
-  "version": "1.0.0",
-  "icon": "icon.png", 
+  "version": "1.0.1",
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -15,16 +15,18 @@
   ],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "time-calculator.calculate",
-      "title": "TimeCalc: Calculate time"
-    }]
+    "commands": [
+      {
+        "command": "time-calculator.calculate",
+        "title": "TimeCalc: Calculate time"
+      }
+    ]
   },
   "publisher": "AppsByRene",
   "repository": {
     "type": "git",
     "url": "https://github.com/yabalo/time-calculator-code-extension.git"
-  },  
+  },
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
