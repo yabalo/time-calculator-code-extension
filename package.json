@@ -3,6 +3,7 @@
   "displayName": "Time Calculator",
   "description": "Simple plugin that calculates the time given an expression with time and scalar values",
   "version": "1.0.0",
+  "icon": "icon.png", 
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -19,6 +20,7 @@
       "title": "TimeCalc: Calculate time"
     }]
   },
+  "publisher": "AppsByRene",
   "repository": {
     "type": "git",
     "url": "https://github.com/yabalo/time-calculator-code-extension.git"
