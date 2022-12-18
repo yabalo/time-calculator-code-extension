@@ -167,12 +167,6 @@ function parse(tokens) {
         error(`expect: expected '${type}${value == null ? "" : " " + value}', but found '${found}'`);
     }
 
-    function scalar() {
-        if(accept("scalar")) {
-            return token.value;
-        }
-    }
-
     function time() {
         let value = token.value;
         if(accept(tokenType.paren, '(')) {
