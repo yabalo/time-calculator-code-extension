@@ -276,12 +276,12 @@ function evaluate(tree) {
             left = evaluate(tree.left);
             right = evaluate(tree.right);
 
-            if(right.type != evaluateType.scalar) {
-                throw new Error("Can only divide by scalar");
+            if(left.type == evaluateType.scalar && right.type == evaluateType.time) {
+                throw new Error("Cannot divide scalar by time");
             }
 
             result = left.value / right.value;
-            return left.type == evaluateType.time ? time(result) : scalar(result);
+            return left.type == right.type ? scalar(result) : time(result);
         case nodeType.mult: 
             left = evaluate(tree.left);
             right = evaluate(tree.right);
